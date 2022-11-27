@@ -10,7 +10,7 @@ public class DisplayPuzzleInven : MonoBehaviour
     [SerializeField] int xGap;
     [SerializeField] int yGap;
     [SerializeField] int maxInventory;
-    List<GameObject> items = new List<GameObject>();
+    public List<GameObject> items = new List<GameObject>();
 
     void Update()
     {

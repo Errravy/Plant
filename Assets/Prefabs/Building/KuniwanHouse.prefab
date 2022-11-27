@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8733187004363955307}
   - component: {fileID: 8733187004363955348}
-  - component: {fileID: 8733187004363955349}
+  - component: {fileID: 653097670082683321}
   m_Layer: 0
   m_Name: KuniwanHouse
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8733187004363955349
-BoxCollider2D:
+--- !u!60 &653097670082683321
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04041004, y: -0.7568331}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,6 +108,11 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.08082, y: 1.2842827}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.2880304, y: -2.0384712}
+      - {x: 2.3037071, y: 0.2842145}
+      - {x: -2.0884876, y: 0.2415514}
+      - {x: -2.087739, y: -1.4124947}
+      - {x: -0.8375666, y: -1.4126188}
+      - {x: -0.8373878, y: -2.0372233}

@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 36acf8fd88596c0448d37deb3fe9499e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0
@@ -364,7 +364,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce21ca62ed092424f86c98cadb8c4672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SO: {fileID: 0}
   health: 100
+  meja: 0
   anim: {fileID: 0}
   playerBags:
   - {fileID: 11400000, guid: 74855d2535eb98540acca45a1c35b300, type: 2}
@@ -372,6 +374,7 @@ MonoBehaviour:
   currentNPC: {fileID: 0}
   currentDoor: {fileID: 0}
   currentCollectable: {fileID: 0}
+  currentPlant: {fileID: 0}
 --- !u!114 &4432622253507769247
 MonoBehaviour:
   m_ObjectHideFlags: 0

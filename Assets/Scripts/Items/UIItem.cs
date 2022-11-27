@@ -45,7 +45,7 @@ public class UIItem : MonoBehaviour
     {
         var bag = GameManager.Instance.puzzleBag;
         var player = FindObjectOfType<Player>();
-        bag.RemoveItem(narkoba);
+
         if (narkoba.healthRestoreAmount + player.health >= 100)
         {
             player.health = 100;
@@ -54,6 +54,8 @@ public class UIItem : MonoBehaviour
         {
             player.health += narkoba.healthRestoreAmount;
         }
+
+        bag.RemoveItem(narkoba);
     }
     public void ShowInformation(ItemSO item)
     {

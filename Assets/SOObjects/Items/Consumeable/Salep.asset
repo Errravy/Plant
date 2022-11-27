@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 25d6107ae338107489cb0ad3574b489a, type: 3}
   icon: {fileID: 0}
-  item: {fileID: 770436687580217288, guid: afe963ae1bd267e4fb0e3c1fdea4d0b1, type: 3}
+  item: {fileID: 770436687580217288, guid: d6cb3ba4b75438d408a1afaf4f7f56bb, type: 3}
   type: 0
-  itemName: Betadine
+  itemName: Salep
   description: 
   healthRestoreAmount: 25

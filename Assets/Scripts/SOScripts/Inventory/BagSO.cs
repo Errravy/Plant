@@ -5,67 +5,78 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Bag", menuName = "Inventory/Bag")]
 public class BagSO : ScriptableObject
 {
-  public List<InventorySlot> container = new List<InventorySlot>();
+    public List<InventorySlot> container = new List<InventorySlot>();
 
-  public void AddItem(ItemSO getItem, int getAmount)
-  {
-    bool hasItem = false;
-
-    foreach (InventorySlot inventory in container)
+    public void AddItem(ItemSO getItem, int getAmount)
     {
-      if (inventory.itemObjects == getItem && inventory.itemObjects.type != ItemType.Equipment)
-      {
-        inventory.AddItem(getAmount);
-        hasItem = true;
-        break;
-      }
-    }
+        bool hasItem = false;
 
-    if (!hasItem)
-    {
-      container.Add(new InventorySlot(getItem, getAmount));
-    }
-  }
-
-  public void RemoveItem(ItemSO getItem)
-  {
-    foreach (InventorySlot item in container)
-    {
-      if (item.itemObjects == getItem)
-      {
-        item.RemoveItem();
-        if (item.amount <= 0)
+        foreach (InventorySlot inventory in container)
         {
-          container.Remove(item);
-          break;
+            if (inventory.itemObjects == getItem && inventory.itemObjects.type != ItemType.Equipment)
+            {
+                inventory.AddItem(getAmount);
+                hasItem = true;
+                break;
+            }
         }
-      }
-    }
-  }
 
-  public void AddPuzzle(ItemSO getItem, int getAmount)
-  {
-    container.Add(new InventorySlot(getItem, getAmount));
-  }
+        if (!hasItem)
+        {
+            container.Add(new InventorySlot(getItem, getAmount));
+        }
+    }
+
+    public void RemoveItem(ItemSO getItem)
+    {
+        foreach (InventorySlot item in container)
+        {
+            if (item.itemObjects == getItem)
+            {
+                item.DecreaseAmount();
+                if (item.amount <= 0)
+                {
+                    container.Remove(item);
+                    // Debug.Log("Graphic: " + item.itemObjects.graphic);
+
+                    List<GameObject> itemList = GameManager.Instance.puzzleInvenWindow.GetComponent<DisplayPuzzleInven>().items;
+
+                    foreach (var itemInList in itemList)
+                    {
+                        itemList.Remove(itemInList);
+                        Destroy(itemInList);
+                        break;
+                    }
+
+                    break;
+                }
+            }
+        }
+    }
+
+    public void AddPuzzle(ItemSO getItem, int getAmount)
+    {
+        container.Add(new InventorySlot(getItem, getAmount));
+    }
 }
 
 [System.Serializable]
 public class InventorySlot
 {
-  public int amount;
-  public ItemSO itemObjects;
-  public InventorySlot(ItemSO getItem, int getAmount)
-  {
-    amount = getAmount;
-    itemObjects = getItem;
-  }
-  public void AddItem(int value)
-  {
-    amount += value;
-  }
+    public int amount;
+    public ItemSO itemObjects;
+    public InventorySlot(ItemSO getItem, int getAmount)
+    {
+        amount = getAmount;
+        itemObjects = getItem;
+    }
+    public void AddItem(int value)
+    {
+        amount += value;
+    }
 
-  public void RemoveItem()
-  {
-    amount--;
-  }
+    public void DecreaseAmount()
+    {
+        amount--;
+    }
 }

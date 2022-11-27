@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8733187003688010287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -1.106, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.539, y: -2.036, z: 0}
+  m_LocalScale: {x: 0.9625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8733187004363955307}
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.09993148}
+  m_Offset: {x: 0, y: 0.14421034}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +111,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0032673, y: 1.0597796}
+  m_Size: {x: 1.0032673, y: 1.1483374}
   m_EdgeRadius: 0
 --- !u!114 &8733187003688010284
 MonoBehaviour:
@@ -149,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8733187004363955307}
   - component: {fileID: 8733187004363955348}
-  - component: {fileID: 8733187004363955349}
+  - component: {fileID: 3863550667182093430}
   m_Layer: 0
   m_Name: Klinik
   m_TagString: Untagged
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -105284076, guid: 306ccad59042798439a0cd6811f09093, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f84675ed7acbbc3408b9cb437162fd52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -225,8 +225,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8733187004363955349
-BoxCollider2D:
+--- !u!60 &3863550667182093430
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -238,16 +238,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.95981836}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 2.9375}
+    oldSize: {x: 5.66, y: 4.96}
     newSize: {x: 4, y: 3}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1.0178633}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.5878258, y: -2.3796966}
+      - {x: 2.7743676, y: -0.44353694}
+      - {x: -2.608845, y: -0.44942814}
+      - {x: -2.5501156, y: -2.3996997}
