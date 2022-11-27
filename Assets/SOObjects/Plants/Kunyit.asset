@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
   m_Name: Kunyit
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
   puzzles:
   - plant: 1
     item: {fileID: 11400000, guid: 0c4fb69e984de244696b46eb546b3f0d, type: 2}
@@ -26,3 +25,4 @@ MonoBehaviour:
     item: {fileID: 11400000, guid: 8f4b56f510f037f4eacca1dd44575df6, type: 2}
     finished: 0
     id: 3
+  isFinished: 1

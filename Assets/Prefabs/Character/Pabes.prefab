@@ -162,7 +162,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1870413732, guid: d40a95f5804eef44dae8a6d1fbb39a6a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bfad5e23e6f3784086b1d9cbdda608e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,14 +190,14 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.96, y: 1.96}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0811282, y: 1.0135577}
+  m_Size: {x: 1.1871891, y: 2.2464333}
   m_EdgeRadius: 0
 --- !u!114 &8526249827100655722
 MonoBehaviour:
@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8db747c65cda445bbbb3229118fd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pocket: {fileID: 0}
   mainQuests: []
   sideQuests: []
   notification: {fileID: 8526249826775601804}
@@ -263,7 +264,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.00032651424}
+  m_Offset: {x: 0, y: -0.32159722}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -274,7 +275,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9386604}
+  m_Size: {x: 0.88808715, y: 1.3543952}
   m_EdgeRadius: 0
 --- !u!1 &8526249828212225224
 GameObject:
@@ -301,7 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8526249828212225224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.48, z: 0.6}
+  m_LocalPosition: {x: 0, y: -0.952, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -348,7 +349,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 36acf8fd88596c0448d37deb3fe9499e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_FlipX: 0

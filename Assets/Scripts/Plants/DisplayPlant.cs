@@ -86,6 +86,8 @@ public class DisplayPlant : MonoBehaviour
             text.text = "Manfaat: \n1, " + currentPlant.puzzles[0].item.description +
                         "\n2, " + currentPlant.puzzles[1].item.description +
                         "\n3, " + currentPlant.puzzles[2].item.description;
+
+            currentPlant.isFinished = true;
         }
         else
             text.text = "";
