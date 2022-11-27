@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Door
+  - Weapon
+  - PuzzleTrigger
+  - Enemy
+  - Collectable
+  - Meja
+  - Plant
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Enemy
+  - Water
+  - UI
+  - Wall
+  - Building
+  - Object
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Ground
+    uniqueID: 1587363135
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Building
+    uniqueID: 3566619425
+    locked: 0
+  - name: Interior
+    uniqueID: 1776131695
+    locked: 0
+  - name: Character
+    uniqueID: 3523840491
+    locked: 0

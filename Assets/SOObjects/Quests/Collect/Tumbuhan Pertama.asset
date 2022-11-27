@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8582036b93411cf418bbddaa74075fc5, type: 3}
+  m_Name: Tumbuhan Pertama
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: f580620110208ca4c9dcf30997b1485f, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: fc75b1816bdb8c241b6ea5a918359259, type: 2}
+  nextObjectiveDialogueSO: {fileID: 0}
+  questID: 1
+  questName: Kumpulkan jeruk nipis
+  questDescription: Kumpulkan 5 jeruk nipis
+  questType: 0
+  questTypeAction: 1
+  questStatus: 0
+  gold: 50
+  items: []
+  itemSO: {fileID: 11400000, guid: 4f3bd4dccaefe4e4b9cbf006664efd26, type: 2}
+  expectedItemAmount: 5
+  currentItemAmount: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b87437111334b440bb2ef38b251dc3e, type: 3}
+  m_Name: Desa Liekognisi
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: 84c5ef1c5591b874a9cdc13f72eb1e5a, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: 29298f0ee53113c47bb80b38c619b5a3, type: 2}
+  questID: 0
+  questName: Bicara dengan Mentor
+  questDescription: Pergilah untuk berbicara dengan mentor Nori
+  questType: 0
+  questTypeAction: 2
+  questStatus: 2
+  gold: 20
+  items: []
+  talkTargetName: Mentor
+  hasTalk: 1

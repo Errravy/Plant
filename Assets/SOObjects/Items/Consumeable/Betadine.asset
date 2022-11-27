@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d43a82d0e9ab4742b974aa57d6ed085, type: 3}
+  m_Name: Betadine
+  m_EditorClassIdentifier: 
+  graphic: {fileID: 1181196059863349150, guid: 25d6107ae338107489cb0ad3574b489a, type: 3}
+  icon: {fileID: 0}
+  item: {fileID: 770436687580217288, guid: afe963ae1bd267e4fb0e3c1fdea4d0b1, type: 3}
+  type: 0
+  itemName: Betadine
+  description: 
+  healthRestoreAmount: 10

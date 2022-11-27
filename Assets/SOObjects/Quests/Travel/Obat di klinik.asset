@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8310539feb365aa43a623dca2224f263, type: 3}
+  m_Name: Obat di klinik
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: f580620110208ca4c9dcf30997b1485f, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: bca527e9911031248a8a54b71f97a955, type: 2}
+  nextObjectiveDialogueSO: {fileID: 0}
+  questID: 4
+  questName: Pergi ke Klinik
+  questDescription: Pergi ke klinik untuk mendapatkan item heal yang bisa membantunya
+    menyingkirkan tanaman berbahaya di hutan
+  questType: 0
+  questTypeAction: 3
+  questStatus: 2
+  gold: 20
+  items:
+  - {fileID: 770436687580217288, guid: afe963ae1bd267e4fb0e3c1fdea4d0b1, type: 3}
+  - {fileID: 770436687580217288, guid: 10b05e5a9860f93488cc7e4622c45c8d, type: 3}
+  travelTargetSceneName: Klinik
+  hasTravel: 1

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1724a246797d0f748a468538f5039318, type: 3}
+  m_Name: Kunyit1
+  m_EditorClassIdentifier: 
+  graphic: {fileID: 1181196059863349150, guid: 68c1efe0d8723884c811ac2590487714, type: 3}
+  icon: {fileID: 1181196059863349150, guid: ef7958c2d6931ac4889198d3e2cff9f7, type: 3}
+  item: {fileID: 8572188587223078437, guid: 800b69fc34d6ec04e861ad29ffe6a339, type: 3}
+  type: 2
+  itemName: Kunyit
+  description: Mengurangi nyeri pada penderita osteoarthritis
+  plant: 1
+  ID: 1

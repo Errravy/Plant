@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1724a246797d0f748a468538f5039318, type: 3}
+  m_Name: Jahe2
+  m_EditorClassIdentifier: 
+  graphic: {fileID: 1181196059863349150, guid: 98ca3ef24ba424949924cdb2009861e8, type: 3}
+  icon: {fileID: 0}
+  item: {fileID: 3369044638603560155, guid: 6b26a67e33ee3444181cf972e40794c6, type: 3}
+  type: 2
+  itemName: Jahe
+  description: 
+  plant: 0
+  ID: 2

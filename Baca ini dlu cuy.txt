@@ -1,0 +1,6 @@
+yang diubah
+- NPC + OpenShop > nambah openshop
+- NPC Quest di non aktif
+- PlayerInput (Collect) > collect udah
+- playerInput (Interact Npc)> interact npc ke quest jadi shop
+- DisplayInventory (createDisplay)> yang ditampilin SO di inspector bukan game manager

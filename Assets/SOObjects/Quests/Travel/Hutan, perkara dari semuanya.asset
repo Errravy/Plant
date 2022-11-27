@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8310539feb365aa43a623dca2224f263, type: 3}
+  m_Name: Hutan, perkara dari semuanya
+  m_EditorClassIdentifier: 
+  dialogueSO: {fileID: 11400000, guid: 84c5ef1c5591b874a9cdc13f72eb1e5a, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: 29298f0ee53113c47bb80b38c619b5a3, type: 2}
+  nextObjectiveDialogueSO: {fileID: 0}
+  questID: 3
+  questName: Bersihkan Hutan Hitam
+  questDescription: Setelah mendapatkan pedang dari Pabes, Nori pergi ke Hutan Hitam
+    untuk memulai ceritanya
+  questType: 0
+  questTypeAction: 3
+  questStatus: 0
+  gold: 20
+  items: []
+  travelTargetSceneName: HutanHitam
+  hasTravel: 0
