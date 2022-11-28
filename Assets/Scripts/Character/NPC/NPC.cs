@@ -29,8 +29,8 @@ public class NPC : MonoBehaviour
     private void Update()
     {
         CheckQuestStatus();
-        // CheckQuestActive();
-        // UpdateNotification();
+        CheckQuestActive();
+        UpdateNotification();
     }
 
     #endregion
