@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
+  m_Name: Jarak
+  m_EditorClassIdentifier: 
+  puzzles:
+  - plant: 10
+    item: {fileID: 11400000, guid: 2a2ab21870c56be4796a46ec38d3fa40, type: 2}
+    finished: 0
+    id: 1
+  - plant: 10
+    item: {fileID: 11400000, guid: ce9cbb260cc7a514292c80e1e798f973, type: 2}
+    finished: 0
+    id: 2
+  - plant: 10
+    item: {fileID: 11400000, guid: 60d301544b2b8044989eabc2bf74c823, type: 2}
+    finished: 0
+    id: 3
+  isFinished: 0

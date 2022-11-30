@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
+  m_Name: Pisang
+  m_EditorClassIdentifier: 
+  puzzles:
+  - plant: 6
+    item: {fileID: 11400000, guid: 1d761bd6817440748a06dd9c58f0db32, type: 2}
+    finished: 0
+    id: 1
+  - plant: 6
+    item: {fileID: 11400000, guid: 38bc8baf40a1b804d97f9aed60dd6475, type: 2}
+    finished: 0
+    id: 2
+  - plant: 6
+    item: {fileID: 11400000, guid: 7a2926547e1a1f4499c2d62b1723c846, type: 2}
+    finished: 0
+    id: 3
+  isFinished: 0

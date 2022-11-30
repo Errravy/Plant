@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
+  m_Name: Bebek
+  m_EditorClassIdentifier: 
+  puzzles:
+  - plant: 14
+    item: {fileID: 11400000, guid: 073176e0409b3d044b26702fd0a40a53, type: 2}
+    finished: 0
+    id: 1
+  - plant: 14
+    item: {fileID: 11400000, guid: 76e68e39a9c049843956e4e781957370, type: 2}
+    finished: 0
+    id: 2
+  - plant: 14
+    item: {fileID: 11400000, guid: de18b7f7efcf51045b0e3893fd127700, type: 2}
+    finished: 0
+    id: 3
+  isFinished: 0

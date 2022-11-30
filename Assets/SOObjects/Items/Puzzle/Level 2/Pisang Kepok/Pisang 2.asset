@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1724a246797d0f748a468538f5039318, type: 3}
+  m_Name: Pisang 2
+  m_EditorClassIdentifier: 
+  graphic: {fileID: 1181196059863349150, guid: 452756f6d4c8aad448cba24e5fb23d7c, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  item: {fileID: 8572188587223078437, guid: de1850042e5f06f4ca7557915f91c772, type: 3}
+  type: 2
+  itemName: Pisang
+  description: Mengontrol gula darah
+  plant: 6
+  ID: 3

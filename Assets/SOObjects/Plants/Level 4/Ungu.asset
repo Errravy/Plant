@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
+  m_Name: Ungu
+  m_EditorClassIdentifier: 
+  puzzles:
+  - plant: 15
+    item: {fileID: 11400000, guid: d296c20276c9be04ba2f2fd5c33f4dce, type: 2}
+    finished: 0
+    id: 1
+  - plant: 15
+    item: {fileID: 11400000, guid: ea3bbcbd9f8474c4f8cbb3e45473a72b, type: 2}
+    finished: 0
+    id: 2
+  - plant: 15
+    item: {fileID: 11400000, guid: 1fdab9c1762f0b843a255477f711287b, type: 2}
+    finished: 0
+    id: 3
+  isFinished: 0

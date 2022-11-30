@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd068e6e30e7fae4dad46f2e5a8f3e29, type: 3}
+  m_Name: Pepaya
+  m_EditorClassIdentifier: 
+  puzzles:
+  - plant: 7
+    item: {fileID: 11400000, guid: f7921e64777af6c47ad9b9724221b153, type: 2}
+    finished: 0
+    id: 1
+  - plant: 7
+    item: {fileID: 11400000, guid: 065ff9532c736b049ac7e39ce845f19b, type: 2}
+    finished: 0
+    id: 2
+  - plant: 7
+    item: {fileID: 11400000, guid: 3f386649922637e43a30d25c10f86ea7, type: 2}
+    finished: 0
+    id: 3
+  isFinished: 0
