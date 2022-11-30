@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
 
         questWindow.SetActive(true);
 
-        ChangeWindowColor(questStatus);
+        // ChangeWindowColor(questStatus);
 
         questWindow.GetComponent<QuestHandler>().StartQuest(currentQuestSO);
     }

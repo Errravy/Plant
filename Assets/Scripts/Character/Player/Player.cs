@@ -60,7 +60,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("NPC"))
         {
-            currentNPC.GetComponent<NPC>().CloseShop();
+            // currentNPC.GetComponent<NPC>().CloseShop();
             Invoke("NpcNull", 0.5f);
 
         }

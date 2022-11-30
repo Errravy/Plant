@@ -123,12 +123,12 @@ public class NPC : MonoBehaviour
             if (GameManager.Instance.questIndex.questID != mainQuests[0].questID)
             {
                 notification.SetActive(false);
-                GetComponent<Collider2D>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
             }
             else
             {
                 notification.SetActive(true);
-                GetComponent<Collider2D>().enabled = true;
+                GetComponent<BoxCollider2D>().enabled = true;
             }
         }
 
@@ -139,12 +139,12 @@ public class NPC : MonoBehaviour
                 if (GameManager.Instance.questIndex.questID == quest.questID)
                 {
                     notification.SetActive(true);
-                    GetComponent<Collider2D>().enabled = true;
+                    GetComponent<BoxCollider2D>().enabled = true;
                 }
                 else
                 {
                     notification.SetActive(false);
-                    GetComponent<Collider2D>().enabled = false;
+                    GetComponent<BoxCollider2D>().enabled = false;
                 }
             }
         }
