@@ -976,18 +976,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6734
-      objectReference: {fileID: 0}
-    - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.7
       objectReference: {fileID: 0}
@@ -1026,10 +1014,6 @@ PrefabInstance:
     - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4432622253507769252, guid: 36a1828a65a1337418e6df469d734427, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a1828a65a1337418e6df469d734427, type: 3}
@@ -2195,15 +2179,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plant:
   - {fileID: 11400000, guid: f6b57214877d8ad42aafd58b99227523, type: 2}
-  - {fileID: 11400000, guid: 0e2646dc762766747b19883f62ee9c11, type: 2}
   - {fileID: 11400000, guid: ad0d58f0a9b32ba459b22a8c2e196aea, type: 2}
   - {fileID: 11400000, guid: b76dea9f52e48d64285bb5059decdd8f, type: 2}
-  xStart: -200
-  yStart: 0
+  - {fileID: 11400000, guid: 0e2646dc762766747b19883f62ee9c11, type: 2}
+  xStart: -164
+  yStart: -88
   numberOfColumn: 4
-  xGap: 200
+  xGap: 165
   yGap: 150
-  plants: []
+  plants:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currentPlant: {fileID: 0}
   currentPlantID: 0
 --- !u!114 &591167007
@@ -5666,8 +5653,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5690,7 +5677,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 32
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     Player player;
+    AudioSource audioSource;
     [SerializeField] int damage = 5;
     [SerializeField] LayerMask attackLayerMask;
+    [SerializeField] AudioClip attackAudioClip;
     public GameObject weaponHolder;
     public GameObject currentWeapon;
     public Transform attackPoint;
@@ -23,6 +25,7 @@ public class PlayerCombat : MonoBehaviour
     private void Start()
     {
         player = GetComponent<Player>();
+        audioSource = GetComponent<AudioSource>();
         // if (currentWeapon != null)
         //     SetWeapon();
     }
@@ -59,6 +62,7 @@ public class PlayerCombat : MonoBehaviour
             yield break;
 
         isAttack = true;
+        audioSource.PlayOneShot(attackAudioClip);
         player.anim.SetTrigger("Attack");
 
         Attack();

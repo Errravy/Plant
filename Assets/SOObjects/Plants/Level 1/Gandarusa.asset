@@ -25,4 +25,4 @@ MonoBehaviour:
     item: {fileID: 11400000, guid: be8f8a1589f130c44bbffe41b9944a1c, type: 2}
     finished: 0
     id: 3
-  isFinished: 1
+  isFinished: 0

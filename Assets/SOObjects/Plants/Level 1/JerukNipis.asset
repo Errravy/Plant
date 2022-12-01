@@ -15,14 +15,14 @@ MonoBehaviour:
   puzzles:
   - plant: 2
     item: {fileID: 11400000, guid: 4f3bd4dccaefe4e4b9cbf006664efd26, type: 2}
-    finished: 0
+    finished: 1
     id: 1
   - plant: 2
     item: {fileID: 11400000, guid: 423ab22b8e4e5fd40b2fa755980dd680, type: 2}
-    finished: 0
+    finished: 1
     id: 2
   - plant: 2
     item: {fileID: 11400000, guid: 30a163f49bb8e3044a726a1ef9dfa83f, type: 2}
-    finished: 0
+    finished: 1
     id: 3
   isFinished: 1
