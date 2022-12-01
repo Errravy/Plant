@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class DoorExit : MonoBehaviour
 {
-  public string sceneToLoad;
+    public string sceneToLoad;
+    [HideInInspector] public AudioSource doorAudioSource;
+    public AudioClip doorOpenClip;
+
+    private void Start()
+    {
+        doorAudioSource = GetComponent<AudioSource>();
+    }
 }

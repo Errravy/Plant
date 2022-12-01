@@ -5,24 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class TransitionHandler : MonoBehaviour
 {
-  public GameObject fadeOutPrefab;
+    public GameObject fadeOutPrefab;
 
-  private void Start()
-  {
-    if (fadeOutPrefab != null)
-      Destroy(Instantiate(fadeOutPrefab, Vector3.zero, Quaternion.identity), 1);
-  }
-
-  public IEnumerator Transition(GameObject currentDoor)
-  {
-    PlayerPrefs.SetString("SceneToLoad", currentDoor.GetComponent<DoorExit>().sceneToLoad);
-    PlayerPrefs.SetString("SceneLoadedFrom", SceneManager.GetActiveScene().name);
-
-    AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(currentDoor.GetComponent<DoorExit>().sceneToLoad);
-
-    while (!asyncOperation.isDone)
+    private void Start()
     {
-      yield return null;
+        if (fadeOutPrefab != null)
+            Destroy(Instantiate(fadeOutPrefab, Vector3.zero, Quaternion.identity), 1);
     }
-  }
+
+    public IEnumerator Transition(GameObject currentDoor)
+    {
+        DoorExit doorExit = currentDoor.GetComponent<DoorExit>();
+
+        PlayerPrefs.SetString("SceneToLoad", doorExit.sceneToLoad);
+        PlayerPrefs.SetString("SceneLoadedFrom", SceneManager.GetActiveScene().name);
+
+        StartCoroutine(PlayChangeSceneSound(doorExit.doorAudioSource, doorExit.doorOpenClip));
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(doorExit.sceneToLoad);
+
+        while (!asyncOperation.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    IEnumerator PlayChangeSceneSound(AudioSource audioSource, AudioClip audio)
+    {
+        audioSource.PlayOneShot(audio);
+        yield return new WaitForSeconds(1);
+    }
 }

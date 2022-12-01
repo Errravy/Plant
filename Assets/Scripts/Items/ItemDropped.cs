@@ -6,6 +6,7 @@ public class ItemDropped : MonoBehaviour
 {
     [SerializeField] bool Puzzle;
     [SerializeField] ItemSO item;
+    [SerializeField] AudioClip collectAudioClip;
     DisplayInventory puzzleBag;
     Player player;
 
@@ -23,6 +24,8 @@ public class ItemDropped : MonoBehaviour
     }
     public void Collect()
     {
+        AudioSource.PlayClipAtPoint(collectAudioClip, transform.position);
+
         if (!Puzzle)
         {
             player.playerBags[0].AddItem(item, 1);

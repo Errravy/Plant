@@ -126,3 +126,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Puzzle: 1
   item: {fileID: 11400000, guid: 42d95c7d97005794c858a09600244452, type: 2}
+  collectAudioClip: {fileID: 8300000, guid: 2d45d6d93076b454296023e8a5e0224e, type: 3}

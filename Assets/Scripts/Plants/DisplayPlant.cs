@@ -16,12 +16,15 @@ public class DisplayPlant : MonoBehaviour
     private TextMeshProUGUI text;
     ItemSO icon;
     GameObject icons;
+    AudioSource audioSource;
+    [SerializeField] AudioClip puzzleCompleteClip;
 
     public int currentPlantID;
     bool showPuzzle = true;
 
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         plant = PlantSave.Instance.plants;
         text = gameObject.GetComponentInChildren<TextMeshProUGUI>();
         CreateDisplay();
@@ -83,6 +86,11 @@ public class DisplayPlant : MonoBehaviour
     {
         if (CheckFinishPuzzle())
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(puzzleCompleteClip);
+            }
+
             text.text = "Manfaat: \n1, " + currentPlant.puzzles[0].item.description +
                         "\n2, " + currentPlant.puzzles[1].item.description +
                         "\n3, " + currentPlant.puzzles[2].item.description;

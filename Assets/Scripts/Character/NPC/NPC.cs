@@ -24,6 +24,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
+        CheckInvalidQuest();
     }
 
     private void Update()
@@ -55,6 +56,22 @@ public class NPC : MonoBehaviour
                 GameManager.Instance.ShowDialogue(gameObject, mainQuests[0]);
             else
                 GameManager.Instance.ShowDialogue(gameObject, mainQuests[0], true);
+        }
+    }
+
+    public void OpenShop()
+    {
+        if (pocket != null)
+        {
+            pocket.SetActive(true);
+        }
+    }
+
+    public void CloseShop()
+    {
+        if (pocket != null)
+        {
+            pocket.SetActive(false);
         }
     }
 
@@ -149,18 +166,22 @@ public class NPC : MonoBehaviour
             }
         }
     }
-    public void OpenShop()
+
+    void CheckInvalidQuest()
     {
-        if (pocket != null)
+        List<int> indexToRemove = new List<int>();
+
+        for (int i = 0; i < mainQuests.Count; i++)
         {
-            pocket.SetActive(true);
+            if (GameManager.Instance.questIndex.questID > mainQuests[i].questID)
+            {
+                indexToRemove.Add(i);
+            }
         }
-    }
-    public void CloseShop()
-    {
-        if (pocket != null)
+
+        for (int i = indexToRemove.Count - 1; i >= 0; i--)
         {
-            pocket.SetActive(false);
+            mainQuests.RemoveAt(indexToRemove[i]);
         }
     }
 

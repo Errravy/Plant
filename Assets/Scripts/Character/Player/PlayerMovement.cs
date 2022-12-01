@@ -70,7 +70,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (movement != Vector2.zero)
         {
-            // audioSource.PlayOneShot(footstepAudioClip);
+            if (!audioSource.isPlaying)
+                audioSource.PlayOneShot(footstepAudioClip);
+
             player.anim.SetBool("IsMoving", true);
             player.anim.SetFloat("MoveHorizontal", movement.x);
             player.anim.SetFloat("MoveVertical", movement.y);
@@ -78,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             player.anim.SetBool("IsMoving", false);
+            audioSource.Stop();
         }
 
         if (movement.x < 0)

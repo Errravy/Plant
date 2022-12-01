@@ -24,7 +24,7 @@ MonoBehaviour:
   questStatus: 2
   gold: 20
   items:
-  - {fileID: 770436687580217288, guid: afe963ae1bd267e4fb0e3c1fdea4d0b1, type: 3}
+  - {fileID: 770436687580217288, guid: d6cb3ba4b75438d408a1afaf4f7f56bb, type: 3}
   - {fileID: 770436687580217288, guid: 10b05e5a9860f93488cc7e4622c45c8d, type: 3}
   travelTargetSceneName: Klinik
   hasTravel: 1
