@@ -86,7 +86,7 @@ public class DisplayPlant : MonoBehaviour
     {
         if (CheckFinishPuzzle())
         {
-            if (!audioSource.isPlaying)
+            if (!audioSource.isPlaying && !currentPlant.isFinished)
             {
                 audioSource.PlayOneShot(puzzleCompleteClip);
             }

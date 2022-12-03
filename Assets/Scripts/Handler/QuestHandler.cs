@@ -6,121 +6,127 @@ using TMPro;
 
 public class QuestHandler : MonoBehaviour
 {
-  #region Fields
+    #region Fields
 
-  public TextMeshProUGUI questName;
-  public TextMeshProUGUI questDescription;
-  public TextMeshProUGUI questRewards;
-  public Button acceptButton;
-  public Button declineButton;
-  public Button closeButton;
+    public TextMeshProUGUI questName;
+    public TextMeshProUGUI questDescription;
+    public TextMeshProUGUI questRewards;
+    public Button acceptButton;
+    public Button declineButton;
+    public Button closeButton;
 
-  #endregion
+    #endregion
 
-  #region MonoBehaviour Methods
+    #region MonoBehaviour Methods
 
-  private void Start()
-  {
-    acceptButton.onClick.AddListener(() => AcceptQuest());
-    declineButton.onClick.AddListener(() => DeclineQuest());
-    closeButton.onClick.AddListener(() => CloseQuest());
-  }
-
-  #endregion
-
-  #region Public Methods
-
-  public void StartQuest(QuestSO questSO)
-  {
-    questName.text = questSO.questName;
-    questDescription.text = questSO.questDescription;
-
-    string itemRewards = "";
-    if (questSO.items.Count > 0)
+    private void Start()
     {
-      foreach (GameObject item in questSO.items)
-        itemRewards += item.name + "\n";
+        acceptButton.onClick.AddListener(() => AcceptQuest());
+        declineButton.onClick.AddListener(() => DeclineQuest());
+        closeButton.onClick.AddListener(() => CloseQuest());
     }
 
-    questRewards.text = "Rewards: \n" + questSO.gold + "\n" + itemRewards;
+    #endregion
 
-    CheckQuestStatus(questSO);
-  }
+    #region Public Methods
 
-  public void AcceptQuest()
-  {
-    GameManager.currentQuestSO.questStatus = QuestStatus.InProgress;
-    CloseQuest();
-  }
-
-  public void DeclineQuest()
-  {
-    CloseQuest();
-  }
-
-  #endregion
-
-  #region Private Methods
-
-  void CloseQuest()
-  {
-    if (GameManager.currentQuestSO.questStatus == QuestStatus.Completed)
+    public void StartQuest(QuestSO questSO)
     {
-      PlayerStats.Instance.Gold = GameManager.currentQuestSO.gold;
+        questName.text = questSO.questName;
+        questDescription.text = questSO.questDescription;
 
-      StoreItem(GameManager.currentQuestSO.items);
+        string itemRewards = "";
+        if (questSO.items.Count > 0)
+        {
+            foreach (GameObject item in questSO.items)
+                itemRewards += item.name + "\n";
+        }
 
-      GameManager.currentNPC.GetComponent<NPC>().mainQuests.Remove(GameManager.currentQuestSO);
+        questRewards.text = "Rewards: \n" + questSO.gold + "\n" + itemRewards;
+
+        CheckQuestStatus(questSO);
     }
 
-    PlayerInput playerInput = FindObjectOfType<PlayerInput>();
-    playerInput.EnableInput();
-
-    gameObject.SetActive(false);
-  }
-
-  void CheckQuestStatus(QuestSO questSO)
-  {
-    if (questSO.questStatus == QuestStatus.NotStarted)
+    public void AcceptQuest()
     {
-      acceptButton.gameObject.SetActive(true);
-      declineButton.gameObject.SetActive(true);
-      closeButton.gameObject.SetActive(false);
+        AudioSource.PlayClipAtPoint(SFX.Instance.buttonClickAudioClip, Camera.main.transform.position);
+
+        GameManager.currentQuestSO.questStatus = QuestStatus.InProgress;
+        CloseQuest();
     }
 
-    if (questSO.questStatus == QuestStatus.InProgress || questSO.questStatus == QuestStatus.Completed)
+    public void DeclineQuest()
     {
-      acceptButton.gameObject.SetActive(false);
-      declineButton.gameObject.SetActive(false);
-      closeButton.gameObject.SetActive(true);
+        AudioSource.PlayClipAtPoint(SFX.Instance.buttonClickAudioClip, Camera.main.transform.position);
+
+        CloseQuest();
     }
 
-    if (questSO.questStatus == QuestStatus.Completed && questSO.questType == QuestType.Main)
+    #endregion
+
+    #region Private Methods
+
+    void CloseQuest()
     {
-      acceptButton.gameObject.SetActive(false);
-      declineButton.gameObject.SetActive(false);
-      closeButton.gameObject.SetActive(true);
+        AudioSource.PlayClipAtPoint(SFX.Instance.buttonClickAudioClip, Camera.main.transform.position);
 
-      GameManager.Instance.questIndex.questID++;
+        if (GameManager.currentQuestSO.questStatus == QuestStatus.Completed)
+        {
+            PlayerStats.Instance.Gold = GameManager.currentQuestSO.gold;
+
+            StoreItem(GameManager.currentQuestSO.items);
+
+            GameManager.currentNPC.GetComponent<NPC>().mainQuests.Remove(GameManager.currentQuestSO);
+        }
+
+        PlayerInput playerInput = FindObjectOfType<PlayerInput>();
+        playerInput.EnableInput();
+
+        gameObject.SetActive(false);
     }
-  }
 
-  void StoreItem(List<GameObject> items)
-  {
-    foreach (GameObject item in items)
+    void CheckQuestStatus(QuestSO questSO)
     {
-      if (item?.GetComponent<Weapon>() is Weapon weapon)
-      {
-        PlayerStats.Instance.AddItem(weapon.gameObject);
-      }
-      else
-      {
-        Player player = FindObjectOfType<Player>();
-        var itemSO = item?.GetComponent<ItemDropped>().Item;
-        player.playerBags[0].AddItem(itemSO, 1);
-      }
-    }
-  }
+        if (questSO.questStatus == QuestStatus.NotStarted)
+        {
+            acceptButton.gameObject.SetActive(true);
+            declineButton.gameObject.SetActive(true);
+            closeButton.gameObject.SetActive(false);
+        }
 
-  #endregion
+        if (questSO.questStatus == QuestStatus.InProgress || questSO.questStatus == QuestStatus.Completed)
+        {
+            acceptButton.gameObject.SetActive(false);
+            declineButton.gameObject.SetActive(false);
+            closeButton.gameObject.SetActive(true);
+        }
+
+        if (questSO.questStatus == QuestStatus.Completed && questSO.questType == QuestType.Main)
+        {
+            acceptButton.gameObject.SetActive(false);
+            declineButton.gameObject.SetActive(false);
+            closeButton.gameObject.SetActive(true);
+
+            GameManager.Instance.questIndex.questID++;
+        }
+    }
+
+    void StoreItem(List<GameObject> items)
+    {
+        foreach (GameObject item in items)
+        {
+            if (item?.GetComponent<Weapon>() is Weapon weapon)
+            {
+                PlayerStats.Instance.AddItem(weapon.gameObject);
+            }
+            else
+            {
+                Player player = FindObjectOfType<Player>();
+                var itemSO = item?.GetComponent<ItemDropped>().Item;
+                player.playerBags[0].AddItem(itemSO, 1);
+            }
+        }
+    }
+
+    #endregion
 }

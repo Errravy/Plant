@@ -13,7 +13,6 @@ public class DialogueHandler : MonoBehaviour
     public TextMeshProUGUI characterName;
     public TextMeshProUGUI dialogueText;
     public Button continueButton;
-    [SerializeField] AudioClip dialogueAudioClip;
     [SerializeField] AudioClip typingAudioClip;
 
     private int dialogueEntriesLength;
@@ -66,6 +65,8 @@ public class DialogueHandler : MonoBehaviour
 
     void ContinueDialogue(GameObject npc, QuestSO questSO, bool isFinish)
     {
+        AudioSource.PlayClipAtPoint(SFX.Instance.continueDialogueAudioClip, Camera.main.transform.position);
+
         // Set the length of the sentences
         sentencesLength = currentDialogueSO.dialogueEntries[dialogueIndex].sentences.Count;
 
@@ -120,12 +121,14 @@ public class DialogueHandler : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         audioSource.PlayOneShot(typingAudioClip);
+
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
         }
+
         audioSource.Stop();
     }
 

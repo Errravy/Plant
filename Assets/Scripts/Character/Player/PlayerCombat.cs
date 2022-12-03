@@ -109,7 +109,6 @@ public class PlayerCombat : MonoBehaviour
         damage = currentWeapon.GetComponent<Weapon>().damage;
         foreach (Collider2D enemy in hitEnemies)
         {
-
             enemy.GetComponent<Enemy>().GetDamage(damage);
         }
     }

@@ -77,6 +77,8 @@ public class GameManager : MonoBehaviour
 
     public void ShowDialogue(GameObject npc, QuestSO questSO, bool isFinish = false)
     {
+        AudioSource.PlayClipAtPoint(SFX.Instance.dialogueStartAudioClip, Camera.main.transform.position);
+
         dialogueWindow.SetActive(true);
         dialogueWindow.GetComponent<DialogueHandler>().StartDialogue(npc, questSO, isFinish);
     }

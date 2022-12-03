@@ -84,6 +84,10 @@ public class Player : MonoBehaviour
 
     public void GetDamage(int damage)
     {
+        AudioSource.PlayClipAtPoint(SFX.Instance.playerDamagedAudioClip, transform.position);
+
+        StartCoroutine(FlashRed());
+
         health -= damage;
     }
     public void GetPoisoned(int damagePerSecond)
@@ -100,7 +104,11 @@ public class Player : MonoBehaviour
         while (getDamage >= 0)
         {
             yield return new WaitForSeconds(2);
-            if (getDamage <= 0) { break; }
+
+            if (getDamage <= 0) break;
+
+            StartCoroutine(FlashRed());
+
             health -= damagePerSecond;
             getDamage--;
         }
@@ -109,6 +117,14 @@ public class Player : MonoBehaviour
 
     #region Private Methods
 
+    IEnumerator FlashRed()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+
+        yield return new WaitForSeconds(0.1f);
+
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
 
     #endregion
 }

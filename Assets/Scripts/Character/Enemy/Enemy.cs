@@ -21,12 +21,14 @@ public class Enemy : MonoBehaviour
     public GameObject[] dropPuzzle;
     public void GetDamage(int damage)
     {
+        AudioSource.PlayClipAtPoint(SFX.Instance.enemyDamagedAudioClip, transform.position);
+        StartCoroutine(FlashRed());
+
         health -= damage;
     }
 
     public virtual void Dead()
     {
-
         int rnd = Random.Range(0, dropPuzzle.Length);
         if (health <= 0 && candrop)
         {
@@ -43,5 +45,14 @@ public class Enemy : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position, radius);
         if (drawRadius)
             Gizmos.DrawWireSphere(transform.position, attackRadius);
+    }
+
+    IEnumerator FlashRed()
+    {
+        GetComponent<SpriteRenderer>().color = Color.red;
+
+        yield return new WaitForSeconds(0.1f);
+
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

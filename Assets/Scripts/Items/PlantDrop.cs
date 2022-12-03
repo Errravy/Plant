@@ -8,6 +8,8 @@ public class PlantDrop : MonoBehaviour
 
     public void GetPlant()
     {
+        AudioSource.PlayClipAtPoint(SFX.Instance.collectAudioClip, transform.position);
+
         PlantSave.Instance.plants.Add(plant);
         Destroy(gameObject);
     }

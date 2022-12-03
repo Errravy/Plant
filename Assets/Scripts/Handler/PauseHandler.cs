@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PauseHandler : MonoBehaviour
 {
@@ -36,7 +37,9 @@ public class PauseHandler : MonoBehaviour
                 // Set the status of the quest
                 // If the quest NotStarted, set the interactable to false
                 if (mainQuests[questItem.transform.GetSiblingIndex()].questID > GameManager.Instance.questIndex.questID)
+                {
                     questItem.GetComponent<Button>().interactable = false;
+                }
                 else
                     questItem.GetComponent<Button>().interactable = true;
             }
