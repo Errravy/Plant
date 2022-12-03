@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Kelapa 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 256c69f2d197be0418a544acd1a5d0bf, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: ef5bb31fb5622d94baedef3761c6477c, type: 3}
   item: {fileID: 8572188587223078437, guid: 8262053ad1940cc4ab7bcab4c966cb76, type: 3}
   type: 2
   itemName: Kelapa

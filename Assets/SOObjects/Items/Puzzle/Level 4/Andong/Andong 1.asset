@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Andong 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: b7d0194f1e9119e4081b9bfe6c3629ad, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 9b444d88b107e4c4d946e55665d2e5f3, type: 3}
   item: {fileID: 8572188587223078437, guid: eb3772d54847f5244a2d6ac7b53a7a31, type: 3}
   type: 2
   itemName: Andong

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pinang 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 3448f271c7755b348894295f86c99a64, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: e8c4efb371e02374895d845fbcadd2ec, type: 3}
   item: {fileID: 8572188587223078437, guid: 9b4786737da1db6449c22c5470e5d864, type: 3}
   type: 2
   itemName: Pinang

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sirsak 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 5a2bffa8eb4687f4d868656d10171ea7, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 544b94c6923a46146ab9e83d2d134fc3, type: 3}
   item: {fileID: 8572188587223078437, guid: ba439709a1d70374f9f27b28974ed186, type: 3}
   type: 2
   itemName: sirsak

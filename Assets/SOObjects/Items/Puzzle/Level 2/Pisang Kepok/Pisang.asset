@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pisang
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 9b18b3ca4ac816548b8246a3e30b50aa, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 80dd01e51a7547b448f71a7bba03808b, type: 3}
   item: {fileID: 8572188587223078437, guid: 0b0883a4a7760d547944852dbfb5dbce, type: 3}
   type: 2
   itemName: Pisang

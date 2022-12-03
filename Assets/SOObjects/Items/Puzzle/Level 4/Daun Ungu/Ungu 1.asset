@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Ungu 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: d3c35b8f38593a248b25b4f50892659f, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 2e72845326ce4564591d697322856770, type: 3}
   item: {fileID: 8572188587223078437, guid: 3be73be9960c2424c92c1ed945a2c543, type: 3}
   type: 2
   itemName: Daun Ungu

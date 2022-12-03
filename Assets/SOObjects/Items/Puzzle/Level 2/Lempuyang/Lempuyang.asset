@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Lempuyang
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 87d9cb357f458734fa546168340d6e07, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 52f2a3993ee338d438bed7f1d6627bc8, type: 3}
   item: {fileID: 8572188587223078437, guid: 7321663e09180f44a929719e83179b78, type: 3}
   type: 2
   itemName: Lempuyang

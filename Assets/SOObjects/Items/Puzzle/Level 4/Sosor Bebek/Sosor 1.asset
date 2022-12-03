@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sosor 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: c5633439d78f3654b9f325ea75378f45, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 64f709fd60ed194439c4819d864acc68, type: 3}
   item: {fileID: 8572188587223078437, guid: 23994056e5bf4db43abfe6a06f7bc79b, type: 3}
   type: 2
   itemName: Sosor Bebek

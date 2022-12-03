@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Jarak 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: fa08a49d8b23a634cb648b7a17be7512, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: c950d9a0726fb6b4cbc8d40d058fd8d3, type: 3}
   item: {fileID: 8572188587223078437, guid: ebec7912f3dbb8c4fb77c2b4f7ddd0f6, type: 3}
   type: 2
   itemName: Daun Jarak

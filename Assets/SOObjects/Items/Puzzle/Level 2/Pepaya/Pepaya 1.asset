@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pepaya 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 337de84c513cd9b4dbf083c48304341a, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: f33bcf5261d5c06469d81774ce4bf9d7, type: 3}
   item: {fileID: 8572188587223078437, guid: 3898d27f7cffcd146855dd0c9f24022e, type: 3}
   type: 2
   itemName: Pepaya

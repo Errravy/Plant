@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sepatu 1
   m_EditorClassIdentifier: 
   graphic: {fileID: 1181196059863349150, guid: 884e14c013099f64790096c04fce385e, type: 3}
-  icon: {fileID: 1181196059863349150, guid: 4def6863116f3ae42be10b7136ed8f3a, type: 3}
+  icon: {fileID: 1181196059863349150, guid: 097c1f1183ff1004b94c7e66a0286b16, type: 3}
   item: {fileID: 8572188587223078437, guid: b3ddc4fa769447348b5496ac44134a1b, type: 3}
   type: 2
   itemName: Kembang Sepatu
