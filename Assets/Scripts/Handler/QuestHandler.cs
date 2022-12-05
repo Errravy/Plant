@@ -77,6 +77,7 @@ public class QuestHandler : MonoBehaviour
             StoreItem(GameManager.currentQuestSO.items);
 
             GameManager.currentNPC.GetComponent<NPC>().mainQuests.Remove(GameManager.currentQuestSO);
+            GameManager.Instance.questIndex.questID++;
         }
 
         PlayerInput playerInput = FindObjectOfType<PlayerInput>();
@@ -106,8 +107,6 @@ public class QuestHandler : MonoBehaviour
             acceptButton.gameObject.SetActive(false);
             declineButton.gameObject.SetActive(false);
             closeButton.gameObject.SetActive(true);
-
-            GameManager.Instance.questIndex.questID++;
         }
     }
 

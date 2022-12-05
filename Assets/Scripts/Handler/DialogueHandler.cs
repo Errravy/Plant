@@ -28,13 +28,13 @@ public class DialogueHandler : MonoBehaviour
 
     private void Update()
     {
-        // auto change the button text to "Close" if only have 1 dialogueEntries and 1 sentences
-        if (dialogueEntriesLength == 1 && sentencesLength == 1)
-            continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Close";
+        // // auto change the button text to "Close" if only have 1 dialogueEntries and 1 sentences
+        // if (dialogueEntriesLength == 1 && sentencesLength == 1)
+        //     continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Close";
 
-        // change the text of the continue button ftom "Continue" to "End" when the dialogue is finished
-        if (dialogueIndex == dialogueEntriesLength - 1 && sentencesIndex == sentencesLength - 1)
-            continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Close";
+        // // change the text of the continue button ftom "Continue" to "End" when the dialogue is finished
+        // if (dialogueIndex == dialogueEntriesLength - 1 && sentencesIndex == sentencesLength - 1)
+        //     continueButton.GetComponentInChildren<TextMeshProUGUI>().text = "Close";
     }
 
     #endregion

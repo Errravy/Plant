@@ -19,7 +19,6 @@ public class TravelQuestSO : QuestSO
     {
         if (questStatus == QuestStatus.InProgress)
         {
-            Debug.Log("Masuk sini");
             if (SceneManager.GetActiveScene().name == travelTargetSceneName)
                 hasTravel = true;
         }

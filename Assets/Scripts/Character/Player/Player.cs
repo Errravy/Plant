@@ -33,10 +33,6 @@ public class Player : MonoBehaviour
     private void Update()
     {
         SO.health = health;
-        if (health <= 0)
-        {
-            Debug.Log("Tewas");
-        }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -89,6 +85,14 @@ public class Player : MonoBehaviour
         StartCoroutine(FlashRed());
 
         health -= damage;
+
+        if (health <= 0)
+        {
+            health = 0;
+            // gameObject.SetActive(false);
+            Time.timeScale = 0;
+            GameManager.Instance.GameOver();
+        }
     }
     public void GetPoisoned(int damagePerSecond)
     {

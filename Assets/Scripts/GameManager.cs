@@ -33,9 +33,12 @@ public class GameManager : MonoBehaviour
     [Header("Puzzle")]
     private GameObject puzzleWindow;
 
-
-    [Header("Puzzle")]
+    [Header("Pause")]
     private GameObject pauseWindow;
+
+    [Header("Game")]
+    private GameObject gameOverWindow;
+    private GameObject gameWinWindow;
 
     #endregion
 
@@ -59,6 +62,8 @@ public class GameManager : MonoBehaviour
         inventoryWindow = Resources.FindObjectsOfTypeAll<DisplayInventory>()[0].gameObject;
         puzzleWindow = Resources.FindObjectsOfTypeAll<DisplayPlant>()[0].gameObject;
         pauseWindow = Resources.FindObjectsOfTypeAll<PauseHandler>()[0].gameObject;
+        gameOverWindow = Resources.FindObjectsOfTypeAll<GameOverHandler>()[0].gameObject;
+        gameWinWindow = Resources.FindObjectsOfTypeAll<GameWinHandler>()[0].gameObject;
 
         // Set Inventory
         puzzleInvenWindow.GetComponent<DisplayPuzzleInven>().CreateDisplay();
@@ -114,15 +119,27 @@ public class GameManager : MonoBehaviour
         pauseWindow.SetActive(!pauseWindow.activeSelf);
     }
 
+    public void GameOver()
+    {
+        gameOverWindow.SetActive(true);
+    }
+
+    public void GameWin()
+    {
+        gameWinWindow.SetActive(true);
+        Time.timeScale = 0;
+    }
+
     #endregion
 
     #region Private Methods
 
     void CheckQuestsInLevel()
     {
-        if (level.mainQuests.Count == 0)
+        if (questIndex.questID >= level.mainQuests.Count)
         {
-            Debug.Log("Trigger quest for taking player skill");
+            GameWin();
+            return;
         }
     }
 

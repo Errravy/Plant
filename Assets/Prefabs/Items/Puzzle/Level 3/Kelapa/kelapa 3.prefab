@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5412773966426778006}
   - component: {fileID: 4664717334036296056}
   m_Layer: 0
-  m_Name: kelapa 3
+  m_Name: Kelapa 3
   m_TagString: Collectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

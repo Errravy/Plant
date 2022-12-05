@@ -99,10 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0921de9ce18dcb4ab0d2029509ca514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 100
   damage: 5
   attackDuration: 0
-  drawRadius: 1
+  drawRadius: 0
   radius: 4.14
   attackRadius: 0
   dropPuzzle:

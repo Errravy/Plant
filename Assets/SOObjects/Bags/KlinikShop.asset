@@ -12,8 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235c206941e31a549b12ed6aa06532ef, type: 3}
   m_Name: KlinikShop
   m_EditorClassIdentifier: 
-  container:
-  - amount: 1000
-    itemObjects: {fileID: 11400000, guid: 083496b1aff0e4e408ec473a5913b856, type: 2}
-  - amount: 1000
-    itemObjects: {fileID: 11400000, guid: f982340cf8976c243b09b9e23abd7560, type: 2}
+  container: []

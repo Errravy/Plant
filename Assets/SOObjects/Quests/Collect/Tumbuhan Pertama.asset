@@ -23,6 +23,6 @@ MonoBehaviour:
   questStatus: 0
   gold: 50
   items: []
-  itemSO: {fileID: 11400000, guid: 4f3bd4dccaefe4e4b9cbf006664efd26, type: 2}
-  expectedItemAmount: 5
+  plantSO: {fileID: 11400000, guid: f6b57214877d8ad42aafd58b99227523, type: 2}
+  expectedItemAmount: 1
   currentItemAmount: 0

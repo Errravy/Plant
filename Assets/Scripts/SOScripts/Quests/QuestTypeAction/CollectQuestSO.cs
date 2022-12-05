@@ -6,7 +6,7 @@ using UnityEngine;
 public class CollectQuestSO : QuestSO
 {
     [Header("Requirements")]
-    public ItemSO itemSO;
+    public PlantSO plantSO;
     public int expectedItemAmount;
     public int currentItemAmount;
 
@@ -19,8 +19,9 @@ public class CollectQuestSO : QuestSO
     {
         if (questStatus == QuestStatus.InProgress)
         {
-            DisplayInventory displayInventory = Resources.FindObjectsOfTypeAll<DisplayInventory>()[0];
-            currentItemAmount = displayInventory.GetItemCount(itemSO);
+            // DisplayInventory displayInventory = Resources.FindObjectsOfTypeAll<DisplayInventory>()[0];
+            // currentItemAmount = displayInventory.GetItemCount(itemSO);
+            currentItemAmount = PlantSave.Instance.GetItemCount(plantSO);
         }
     }
 

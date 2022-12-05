@@ -18,4 +18,17 @@ public class PlantSave : MonoBehaviour
 
         Instance = this;
     }
+
+    public int GetItemCount(PlantSO plantSO)
+    {
+        int count = 0;
+
+        foreach (PlantSO plant in plants)
+        {
+            if (plant == plantSO)
+                count++;
+        }
+
+        return count;
+    }
 }
