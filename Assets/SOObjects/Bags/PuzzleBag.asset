@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 235c206941e31a549b12ed6aa06532ef, type: 3}
   m_Name: PuzzleBag
   m_EditorClassIdentifier: 
-  container: []
+  container:
+  - amount: 1
+    itemObjects: {fileID: 11400000, guid: fb15f87e42710174b8ab889a26783fb9, type: 2}
+  - amount: 1
+    itemObjects: {fileID: 11400000, guid: 6ff30f88ae7d7844cb7827d4d4a8cdfb, type: 2}
+  - amount: 1
+    itemObjects: {fileID: 11400000, guid: be8f8a1589f130c44bbffe41b9944a1c, type: 2}

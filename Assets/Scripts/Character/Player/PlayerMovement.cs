@@ -83,11 +83,6 @@ public class PlayerMovement : MonoBehaviour
             audioSource.Stop();
         }
 
-        if (movement.x < 0)
-            Flip(-0.6734f);
-        else if (movement.x > 0)
-            Flip(0.6734f);
-
         rb.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
     }
 

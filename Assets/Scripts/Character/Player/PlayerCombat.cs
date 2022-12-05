@@ -100,11 +100,6 @@ public class PlayerCombat : MonoBehaviour
     {
         // InstantiateWeapon();
 
-        if (direction.x > 0.1)
-            GetComponent<PlayerMovement>().Flip(0.6734f);
-        else
-            GetComponent<PlayerMovement>().Flip(-0.6734f);
-
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, attackLayerMask);
         damage = currentWeapon.GetComponent<Weapon>().damage;
         foreach (Collider2D enemy in hitEnemies)
