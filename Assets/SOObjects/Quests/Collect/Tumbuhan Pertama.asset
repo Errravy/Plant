@@ -17,7 +17,7 @@ MonoBehaviour:
   nextObjectiveDialogueSO: {fileID: 0}
   questID: 1
   questName: Kumpulkan jeruk nipis
-  questDescription: Kumpulkan 5 jeruk nipis
+  questDescription: Kumpulkan 1  jeruk nipis
   questType: 0
   questTypeAction: 1
   questStatus: 0

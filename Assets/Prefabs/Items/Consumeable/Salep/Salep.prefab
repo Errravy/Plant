@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9069102996458362546}
   - component: {fileID: 308157656263950206}
   - component: {fileID: 2516208811074570249}
+  - component: {fileID: 2165963684249815812}
   m_Layer: 0
   m_Name: Salep
   m_TagString: Collectable
@@ -99,3 +100,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Puzzle: 0
   item: {fileID: 11400000, guid: 2e50a02e5b0793e419bcf4333fbe92e5, type: 2}
+--- !u!61 &2165963684249815812
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770436687580217288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.014076039}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.48, y: 0.48}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32365787, y: 0.2955058}
+  m_EdgeRadius: 0

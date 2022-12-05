@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8310539feb365aa43a623dca2224f263, type: 3}
   m_Name: Obat di klinik
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: f580620110208ca4c9dcf30997b1485f, type: 2}
-  finishDialogueSO: {fileID: 11400000, guid: bca527e9911031248a8a54b71f97a955, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 6dba9480f574a3f46ae9bc9c53342cb1, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: c638b9b813327a64aa30c418ea9cbace, type: 2}
   nextObjectiveDialogueSO: {fileID: 0}
   questID: 4
   questName: Pergi ke Klinik
-  questDescription: Pergi ke klinik untuk mendapatkan item heal yang bisa membantunya
-    menyingkirkan tanaman berbahaya di hutan
+  questDescription: Pergi ke klinik untuk mendapatkan obat-obatan yang dapat menyembuhkan
+    luka
   questType: 0
   questTypeAction: 3
   questStatus: 2

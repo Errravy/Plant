@@ -16,6 +16,7 @@ public class DisplayPuzzleInven : MonoBehaviour
     {
         for (int i = 0; i < GameManager.Instance.puzzleBag.container.Count; i++)
         {
+            Debug.Log("Masuk sini");
             if (items[i] == null)
             {
                 Destroy(items[i]);

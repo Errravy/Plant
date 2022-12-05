@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7cd7c6e6af8bf44a7522d2a077a7ab, type: 3}
+  m_Name: StartDialogue
+  m_EditorClassIdentifier: 
+  dialogueEntries:
+  - characterName: Dokter
+    sentences:
+    - Halo Nori, saya adalah Dokter di Desa ini
+    - Kamu nampaknya mendapatkan beberapa luka di sekujur tubuhmu
+  - characterName: Nori
+    sentences:
+    - Benar dokter, saya habis pergi ke Hutan Hitam untuk membersihkan hutan tersebut
+      dari monster
+  - characterName: Dokter
+    sentences:
+    - Baiklah aku ada sedikit obat-obatan yang dapat kamu gunakan untuk mengobati
+      luka-lukamu itu
+  - characterName: Nori
+    sentences:
+    - Terima kasih Dokter
+  dialogueType: 1

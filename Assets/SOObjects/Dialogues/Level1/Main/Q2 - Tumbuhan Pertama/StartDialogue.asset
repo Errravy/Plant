@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - characterName: Pabes
+  - characterName: Mentor
     sentences:
-    - Bantulah saya untuk membunuh beberapa monster tanaman di sekitar desa
-    - Nanti saya akan memberikanmu pedang sebagai hadiah
+    - Saya sedang membutuhkan jeruk nipis
+    - Apakah kamu bisa membantuku untuk mencarinya?
   - characterName: Nori
     sentences:
-    - Baik pak, laksanakan
+    - Dimana saya bisa mendapatkan jeruk itu?
+  - characterName: Mentor
+    sentences:
+    - Kamu bisa mendpatkannya di sekitar desa
   dialogueType: 1

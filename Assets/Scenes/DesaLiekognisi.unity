@@ -11987,76 +11987,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8733187004363955307, guid: 45f368bc84913ba4cac0f86a347fc7bb, type: 3}
   m_PrefabInstance: {fileID: 779609421}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &783436094
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2034314036}
-    m_Modifications:
-    - target: {fileID: 8762924846306525554, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_Name
-      value: ToHutanWeald
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525564, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: sceneToLoad
-      value: HutanWeald
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -17.572
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.479
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8762924846306525567, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-      propertyPath: sceneLoadedFrom
-      value: HutanWeald
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
---- !u!4 &783436095 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8762924846306525565, guid: 53669ae1b2a9d9f4195df5520406fb33, type: 3}
-  m_PrefabInstance: {fileID: 783436094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &813651015
 GameObject:
   m_ObjectHideFlags: 0
@@ -63407,7 +63337,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 706960360}
-  - {fileID: 783436095}
   m_Father: {fileID: 105483415}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

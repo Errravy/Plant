@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae7cd7c6e6af8bf44a7522d2a077a7ab, type: 3}
-  m_Name: FinishDialogue
+  m_Name: StartDialogue
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - characterName: Pabes
+  - characterName: Kuniwan
     sentences:
-    - Sesuai yang saya janjikan
-    - Saya akan memberikanmu hadiah sebuah pedang ajaib
-    - Pedang ini dapat membunuh raja iblis
+    - Halo Nori, namaku Kuniwan, aku adalah seorang Kolektor
+    - Kamu dapat menukarkan uangmu menjadi item-item yang bisa kamu gunakan
   dialogueType: 1

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8310539feb365aa43a623dca2224f263, type: 3}
   m_Name: Kuniwan si kolektor
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: 84c5ef1c5591b874a9cdc13f72eb1e5a, type: 2}
-  finishDialogueSO: {fileID: 11400000, guid: 29298f0ee53113c47bb80b38c619b5a3, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 08b0989d17e93f745bb33143619e0747, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: c39ffc8cfd1c8aa4b882797d43f0596a, type: 2}
   nextObjectiveDialogueSO: {fileID: 0}
   questID: 5
   questName: Pergi ke Tukar-Tukar Kuniwan
