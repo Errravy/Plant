@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     [Header("Store GameObjects")]
     public GameObject currentNPC;
-    [HideInInspector] public GameObject currentDoor;
+    public GameObject currentDoor;
     public GameObject currentCollectable;
     public GameObject currentPlant;
 

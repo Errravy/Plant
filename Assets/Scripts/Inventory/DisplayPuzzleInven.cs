@@ -46,8 +46,9 @@ public class DisplayPuzzleInven : MonoBehaviour
         return new Vector3((xStart + xGap * (i % numberOfColumn)), (yStart + -yGap * (i / numberOfColumn)), 0);
     }
 
-    public void AddItem(Player player, ItemSO getItem, int amount, GameObject dropItem)
+    public void AddItem(ItemSO getItem, int amount, GameObject dropItem)
     {
+        var player = FindObjectOfType<Player>();
         if (GameManager.Instance.puzzleBag.container.Count < maxInventory)
         {
             int i = maxInventory - (maxInventory - GameManager.Instance.puzzleBag.container.Count);

@@ -61,7 +61,7 @@ public class PlayerInput : MonoBehaviour
     {
         inputSystem = new InputSystem();
 
-        inputSystem.Player.Interact.performed += ctx => Interaction(ctx);
+        inputSystem.Player.Interact.performed += Interaction;
         inputSystem.Player.Inventory.performed += ctx => Inventory(ctx);
         inputSystem.Player.PuzelInven.performed += ctx => PuzzleInven(ctx);
         inputSystem.Player.Puzzle.performed += ctx => Puzzle(ctx);

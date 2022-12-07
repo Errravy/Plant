@@ -27,13 +27,11 @@ public class ItemDropped : MonoBehaviour
 
         if (!Puzzle)
         {
-            // player.playerBags[0].AddItem(item, 1);
-            GameManager.Instance.puzzleInvenWindow.GetComponent<DisplayPuzzleInven>().AddItem(player, item, 1, gameObject);
+            GameManager.Instance.puzzleInvenWindow.GetComponent<DisplayPuzzleInven>().AddItem(item, 1, gameObject);
         }
         else
         {
-            // player.playerBags[1].AddItem(item, 1);
-            GameManager.Instance.inventoryWindow.GetComponent<DisplayInventory>().AddItem(player, item, 1, gameObject);
+            GameManager.Instance.inventoryWindow.GetComponent<DisplayInventory>().AddItem(item, 1, gameObject);
         }
     }
     void OnTriggerExit2D(Collider2D other)
