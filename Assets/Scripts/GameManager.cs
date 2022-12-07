@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     #region Fields
 
     public Level level;
+    bool canPuzzle = false;
 
     [Header("Quests")]
     public QuestID questIndex;
@@ -74,6 +75,7 @@ public class GameManager : MonoBehaviour
     {
         CheckQuestsInLevel();
         ChangeCurrentQuestInfo();
+        Debug.Log(canPuzzle);
     }
 
     #endregion
@@ -104,14 +106,21 @@ public class GameManager : MonoBehaviour
     {
         inventoryWindow.SetActive(!inventoryWindow.activeSelf);
     }
+    public bool CheckPuzzle()
+    {
+        return canPuzzle;
+    }
     public void PuzzleInventory()
     {
         puzzleInvenWindow.SetActive(!puzzleInvenWindow.activeSelf);
+
     }
 
     public void Puzzle()
     {
         puzzleWindow.SetActive(!puzzleWindow.activeSelf);
+        if (puzzleWindow.activeInHierarchy) { canPuzzle = true; }
+        else { canPuzzle = false; }
     }
 
     public void Pause()

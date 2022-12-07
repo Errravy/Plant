@@ -15,17 +15,21 @@ public class UIItem : MonoBehaviour
 
     public void Click(Puzzle puzzle)
     {
-        PlantType currentPlant = puzzle.plant;
-        for (int i = 0; i < plant.puzzles.Count; i++)
+        if (GameManager.Instance.CheckPuzzle())
         {
-            if (!plant.puzzles[i].finished)
-                obliterated = plant.puzzles[i].InsertPuzzle(currentPlant, puzzle.ID);
+            PlantType currentPlant = puzzle.plant;
+            for (int i = 0; i < plant.puzzles.Count; i++)
+            {
+                if (!plant.puzzles[i].finished)
+                    obliterated = plant.puzzles[i].InsertPuzzle(currentPlant, puzzle.ID);
+            }
+            if (obliterated)
+            {
+                GameObject ui = gameObject;
+                Destroy(ui);
+            }
         }
-        if (obliterated)
-        {
-            GameObject ui = gameObject;
-            Destroy(ui);
-        }
+
     }
 
     public void ChangePage(int i)

@@ -12,22 +12,24 @@ public class DisplayPuzzleInven : MonoBehaviour
     [SerializeField] int maxInventory;
     public List<GameObject> items = new List<GameObject>();
 
+    private void Start()
+    {
+    }
     void Update()
     {
         for (int i = 0; i < GameManager.Instance.puzzleBag.container.Count; i++)
         {
-            Debug.Log("Masuk sini");
-            if (items[i] == null)
+            if (items.Count == GameManager.Instance.puzzleBag.container.Count && items[i] == null)
             {
-                Destroy(items[i]);
                 GameManager.Instance.puzzleBag.container.Remove(GameManager.Instance.puzzleBag.container[i]);
                 items.Remove(items[i]);
             }
-            else
+            else if (items.Count == GameManager.Instance.puzzleBag.container.Count)
             {
                 items[i].GetComponent<RectTransform>().localPosition = GetPosition(i);
             }
         }
+
     }
 
     public void CreateDisplay()
@@ -51,13 +53,12 @@ public class DisplayPuzzleInven : MonoBehaviour
             int i = maxInventory - (maxInventory - GameManager.Instance.puzzleBag.container.Count);
             player.playerBags[0].AddPuzzle(getItem, amount);
             Destroy(dropItem);
-
             items.Add(Instantiate(GameManager.Instance.puzzleBag.container[i].itemObjects.graphic, Vector3.zero, Quaternion.identity, transform));
             items[i].GetComponent<RectTransform>().localPosition = GetPosition(i);
         }
     }
 
-    public void RemoveItem(Player player, ItemSO getItem, int amount)
+    public void RemoveItem(ItemSO getItem, int amount)
     {
         for (int i = 0; i < GameManager.Instance.puzzleBag.container.Count; i++)
         {
