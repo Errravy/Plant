@@ -13,19 +13,12 @@ MonoBehaviour:
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - characterName: Dokter
+  - characterName: Pabes
     sentences:
-    - Halo Nori, saya adalah Dokter di Desa ini
-    - Kamu nampaknya mendapatkan beberapa luka di sekujur tubuhmu
+    - Halo Nori, saya adalah Pabes seorang pandai besi
+    - Saya akan memberikanmu hadiah sebuah pedang
+    - Pedanng ini dapat kamu gunakan untuk membersihkan Hutan Hitam
   - characterName: Nori
     sentences:
-    - Benar dokter, saya habis pergi ke Hutan Hitam untuk membersihkan hutan tersebut
-      dari monster
-  - characterName: Dokter
-    sentences:
-    - Baiklah aku ada sedikit obat-obatan yang dapat kamu gunakan untuk mengobati
-      luka-lukamu itu
-  - characterName: Nori
-    sentences:
-    - Terima kasih Dokter
+    - Baik terima kasih Pabes
   dialogueType: 1

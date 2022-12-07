@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b87437111334b440bb2ef38b251dc3e, type: 3}
   m_Name: Pabes si pandai besi
   m_EditorClassIdentifier: 
-  dialogueSO: {fileID: 11400000, guid: bca527e9911031248a8a54b71f97a955, type: 2}
-  finishDialogueSO: {fileID: 11400000, guid: 5d91a0f58a1bfd84b8b442a24346b568, type: 2}
+  dialogueSO: {fileID: 11400000, guid: 5d91a0f58a1bfd84b8b442a24346b568, type: 2}
+  finishDialogueSO: {fileID: 11400000, guid: bca527e9911031248a8a54b71f97a955, type: 2}
   nextObjectiveDialogueSO: {fileID: 0}
   questID: 2
   questName: Bicara dengan Pabes

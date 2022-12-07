@@ -90,7 +90,6 @@ public class Player : MonoBehaviour
         {
             health = 0;
             // gameObject.SetActive(false);
-            Time.timeScale = 0;
             GameManager.Instance.GameOver();
         }
     }

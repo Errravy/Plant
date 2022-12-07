@@ -131,12 +131,13 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverWindow.SetActive(true);
+        FindObjectOfType<PlayerInput>().DisableInput();
     }
 
     public void GameWin()
     {
         gameWinWindow.SetActive(true);
-        Time.timeScale = 0;
+        FindObjectOfType<PlayerInput>().DisableInput();
     }
 
     #endregion

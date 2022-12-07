@@ -13,8 +13,12 @@ MonoBehaviour:
   m_Name: StartDialogue
   m_EditorClassIdentifier: 
   dialogueEntries:
-  - characterName: Kuniwan
+  - characterName: Pabes
     sentences:
-    - Halo Nori, namaku Kuniwan, aku adalah seorang Kolektor
-    - Kamu dapat menukarkan uangmu menjadi item-item yang bisa kamu gunakan
+    - Halo Nori, saya adalah Pabes seorang pandai besi
+    - Saya akan memberikanmu hadiah sebuah pedang
+    - Pedanng ini dapat kamu gunakan untuk membersihkan Hutan Hitam
+  - characterName: Nori
+    sentences:
+    - Baik terima kasih Pabes
   dialogueType: 1

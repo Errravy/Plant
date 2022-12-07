@@ -4675,7 +4675,7 @@ Animator:
   m_GameObject: {fileID: 1089903653}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e908824911c93348975f6a141e4b957, type: 2}
+  m_Controller: {fileID: 9100000, guid: d0666fe27bd7ee94b83c380969f220c0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -6228,7 +6228,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: Game Win
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 93fb283de12028442b6578d82d22e3b4, type: 2}
   m_sharedMaterial: {fileID: -4037557811083360243, guid: 93fb283de12028442b6578d82d22e3b4, type: 2}

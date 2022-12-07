@@ -15,9 +15,10 @@ MonoBehaviour:
   dialogueEntries:
   - characterName: Pabes
     sentences:
-    - Bantulah saya untuk membunuh beberapa monster tanaman di sekitar desa
-    - Nanti saya akan memberikanmu pedang sebagai hadiah
+    - Halo Nori, saya adalah Pabes seorang pandai besi
+    - Saya akan memberikanmu hadiah sebuah pedang
+    - Pedanng ini dapat kamu gunakan untuk membersihkan Hutan Hitam
   - characterName: Nori
     sentences:
-    - Baik pak, laksanakan
+    - Baik terima kasih Pabes
   dialogueType: 1

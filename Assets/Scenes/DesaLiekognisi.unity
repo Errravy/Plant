@@ -1295,7 +1295,7 @@ GameObject:
   - component: {fileID: 200128807}
   - component: {fileID: 200128806}
   m_Layer: 5
-  m_Name: GameOver
+  m_Name: GameWin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Game Over
+  m_text: Game Win
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 93fb283de12028442b6578d82d22e3b4, type: 2}
   m_sharedMaterial: {fileID: -4037557811083360243, guid: 93fb283de12028442b6578d82d22e3b4, type: 2}
@@ -12396,7 +12396,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 59.8693, y: 33.6765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932465441
 MonoBehaviour:
@@ -15994,7 +15994,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 59.8693, y: 33.6765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1733853435
 MonoBehaviour:
@@ -16056,7 +16056,7 @@ Animator:
   m_GameObject: {fileID: 1733853433}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5e908824911c93348975f6a141e4b957, type: 2}
+  m_Controller: {fileID: 9100000, guid: d0666fe27bd7ee94b83c380969f220c0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
